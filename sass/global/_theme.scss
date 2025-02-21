@@ -1,7 +1,9 @@
-$color-primary: #3a00ff !default;
-$color-primary-alt: #6f6ffd !default;
-$color-secondary: #d42257 !default;
-$color-background: #d2fbf7 !default;
+$color-primary: #880D1E !default; //3a00ff
+//$color-primary-alt: #DD2D4A !default; //6f6ffd
+$color-primary-alt: #F49CBB;
+$color-secondary: #F26A8D !default; //d42257
+//$color-background: #F49CBB !default; //d2fbf7
+$color-background: #DD2D4A !default;
 
 $brand-colors: (
   primary: $color-primary,
