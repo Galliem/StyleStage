@@ -197,7 +197,7 @@ blockquote::after {
   --color-primary-alt: #F49CBB;
   --color-secondary: #F26A8D;
   --color-background: #DD2D4A;
-  --color-text: #4a1f25;
+  --color-text: rgb(73.675, 30.625, 36.575);
   --color-light: #fff;
   --color-anchor: #880D1E;
   --font-family: "Baloo 2", sans-serif;
@@ -208,4 +208,13 @@ blockquote::after {
   --font-size-h4: 1.35rem;
   --font-size-text: 1.15rem;
   --border-radius: 8px;
+}
+
+nav li {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  text-decoration: none;
+  margin: 1rem;
 }
