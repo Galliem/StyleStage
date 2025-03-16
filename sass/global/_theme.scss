@@ -1,7 +1,12 @@
-$color-primary: #880D1E !default;
-$color-primary-alt: #F49CBB;
-$color-secondary: #F26A8D !default;
-$color-background: #DD2D4A !default;
+$color-primary: #3F0D12 !default; //header words
+$color-primary-alt: #F49CBB; //not in use
+$color-secondary: #880D1E !default; //headings background
+$color-background: #F49CBB !default; //headings words
+//#880D1E red
+// #F26A8D med pink
+// #F49CBB light pink
+// #DD2D4A dark pink
+// #3F0D12 dark red
 
 $brand-colors: (
   primary: $color-primary,

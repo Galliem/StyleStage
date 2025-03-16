@@ -3,6 +3,8 @@
  * @link https://github.com/hankchizljaw/modern-css-reset
 */
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -193,13 +195,13 @@ blockquote::after {
 }
 
 :root {
-  --color-primary: #880D1E;
+  --color-primary: #3F0D12;
   --color-primary-alt: #F49CBB;
-  --color-secondary: #F26A8D;
-  --color-background: #DD2D4A;
-  --color-text: rgb(73.675, 30.625, 36.575);
+  --color-secondary: #880D1E;
+  --color-background: #F49CBB;
+  --color-text: rgb(35.35, 17.85, 19.6);
   --color-light: #fff;
-  --color-anchor: #880D1E;
+  --color-anchor: #3F0D12;
   --font-family: "Baloo 2", sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
@@ -210,11 +212,17 @@ blockquote::after {
   --border-radius: 8px;
 }
 
+nav {
+  font-family: "Sour Gummy", san-serif;
+  position: sticky;
+  top: 0;
+}
 nav li {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  position: relative;
+  align-items: flex-end;
+  padding-right: 1rem;
+}
+nav li a {
   text-decoration: none;
-  margin: 1rem;
 }
