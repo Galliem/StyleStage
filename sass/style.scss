@@ -11,9 +11,5 @@
 @import "./composition/reset";
 @import "./block/typography";
 @import "./global/theme";
+@import "./background/background"
 
-$gradient: linear-gradient(180deg, rgba(136,13,30,1) 0%, rgba(244,156,187,1) 50%, rgba(136,13,30,1) 100%);
-
-body {
-    background: $gradient;
-}
