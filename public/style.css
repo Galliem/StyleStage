@@ -209,3 +209,7 @@ blockquote::after {
   --font-size-text: 1.15rem;
   --border-radius: 8px;
 }
+
+body {
+  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 50%, #880d1e 100%);
+}
