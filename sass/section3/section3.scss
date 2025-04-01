@@ -1,20 +1,8 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 20 | @import "./sections/section3";
- *    |         ^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass\style.scss 20:9  root stylesheet */
+$color-background: #dd2d4a;
+$color-primary: #880D1E;
+$color-light: #fff;
+$link-color: #3F0D12;
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 20 \2502  @import \"./sections/section3\";\a    \2502          ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\style.scss 20:9  root stylesheet";
-}
 #guidelines .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -27,7 +15,7 @@ h3,
 a {
   margin: 5px;
   padding: 10px;
-  color: #fff;
+  color: $color-light;
 }
 
 #guidelines .container h3 {
@@ -37,15 +25,15 @@ a {
 }
 
 #guidelines .container a {
-  color: #3F0D12;
+    color: $link-color;
 }
 
 #guidelines .container a:hover {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .link-guidelines {
-  background-color: #dd2d4a;
+  background-color: $color-background;
   font-weight: 600;
   text-align: center;
   margin-left: 25%;
@@ -56,7 +44,7 @@ a {
 }
 
 .link-guidelines:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #guidelines .container::after {
@@ -77,25 +65,32 @@ a {
   0% {
     transform: scale(1);
   }
+
   10% {
     transform: scale(1);
   }
+
   20% {
     transform: scale(1.1);
   }
+
   40% {
     transform: scale(1);
   }
+
   60% {
     transform: scale(1.1);
   }
+
   80% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @media only screen and (min-width: 768px) {
   #guidelines .container {
     display: grid;
@@ -108,8 +103,8 @@ a {
   }
 
   #guidelines .container h3,
-p,
-a {
+  p,
+  a {
     grid-column: 1/2;
   }
 
