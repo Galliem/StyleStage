@@ -1,26 +1,26 @@
-@import '../background/background.scss';
-
 #about .container:nth-last-of-type(2){
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+    margin-bottom: 4em;
     h2 {
-        grid-column: 2;
+        grid-column: 1;
         align-self: start;
         margin: 0;
-        padding-left: 15px;
+        padding-right: 15px;
+        position: sticky;
+        top: 0;
     }
     p {
-        padding-left: 15px;
+        grid-column: 2;
+        padding-right: 15px;
     }
-    p:nth-of-type(1) {
-        grid-row: 1;
-    }
-    blockquote {
-        grid-column: 1;
-        grid-row: 2;
+    blockquote, blockquote::before {
+        grid-column: 2;
         margin: 0;
-        padding: 0 15px;
+        padding: 0;
+        margin-bottom: 20px;
+        margin-left: 10px;
     }
 }
 
