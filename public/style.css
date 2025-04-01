@@ -333,6 +333,7 @@ h1, h2 {
   }
 }
 #guidelines .container {
+  margin: 15px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
@@ -438,4 +439,7 @@ a {
     grid-row: 2/6;
     grid-column: 2/3;
   }
+}
+#contribute .container {
+  background-color: blue;
 }
