@@ -212,3 +212,27 @@ blockquote::after {
   --font-size-text: 1.15rem;
   --border-radius: 8px;
 }
+
+nav {
+  font-family: "Sour Gummy", san-serif;
+  position: sticky;
+  top: 0;
+}
+nav li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 1rem;
+}
+nav li a {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
+  font-family: "Baskervile", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Dancing Script", serif;
+}
