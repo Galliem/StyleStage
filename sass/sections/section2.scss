@@ -1,3 +1,4 @@
+@import '../background/background.scss';
 h2 {
     position: sticky;
     top: 0;
@@ -37,7 +38,7 @@ h2 {
     padding-bottom: 40px;
     padding-top: 10px;
     height: fit-content;
-    width: 35em;
+    max-width: 35em;
 }
 
 
@@ -79,3 +80,19 @@ h2 {
     z-index: 1;
 }
 
+@media (max-width: 1000px) {
+    #about .container:nth-last-of-type(1){
+        grid-template-columns: 1fr;
+        h2{
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
+        }
+        p:nth-of-type(1) {
+            grid-row: 2;
+        }
+        ul {
+            max-width: 100%;
+        }
+    }
+}
