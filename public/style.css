@@ -3,6 +3,8 @@
  * @link https://github.com/hankchizljaw/modern-css-reset
 */
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 *,
 *::before,
@@ -194,13 +196,13 @@ blockquote::after {
 }
 
 :root {
-  --color-primary: #880D1E;
+  --color-primary: #3F0D12;
   --color-primary-alt: #F49CBB;
-  --color-secondary: #F26A8D;
-  --color-background: #DD2D4A;
-  --color-text: #4a1f25;
+  --color-secondary: #880D1E;
+  --color-background: #F49CBB;
+  --color-text: rgb(35.35, 17.85, 19.6);
   --color-light: #fff;
-  --color-anchor: #880D1E;
+  --color-anchor: #3F0D12;
   --font-family: "Baloo 2", sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
@@ -209,13 +211,4 @@ blockquote::after {
   --font-size-h4: 1.35rem;
   --font-size-text: 1.15rem;
   --border-radius: 8px;
-}
-
-body {
-  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
-  font-family: "Baskervile", sans-serif;
-}
-
-h1, h2 {
-  font-family: "Dancing Script", serif;
 }
