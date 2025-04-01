@@ -8,13 +8,6 @@ h1, h2 {
   font-family: "Dancing Script", serif;
 }
 
-h2 {
-  position: sticky;
-  top: 0;
-  padding: 10px;
-  z-index: 10;
-}
-
 #about .container:nth-last-of-type(1) {
   display: grid;
   grid-template-columns: 1fr 1fr;

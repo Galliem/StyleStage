@@ -1,12 +1,4 @@
 @import '../background/background.scss';
-h2 {
-    position: sticky;
-    top: 0;
-    // background-color: white; /* or any other color */
-    padding: 10px;
-    z-index: 10;
-    // border-bottom: 2px solid #ddd; /* Optional: to separate sections visually */
-  }
 
 #about .container:nth-last-of-type(1){
     display: grid;
