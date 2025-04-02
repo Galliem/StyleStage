@@ -440,6 +440,54 @@ a {
     grid-column: 2/3;
   }
 }
-#contribute .container {
+#contribute {
+  margin: 20px;
+  padding: 10px;
+}
+
+#contribute h3 {
   background-color: blue;
+}
+
+#contribute ol {
+  list-style: none;
+  counter-reset: step-counter;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+#contribute ol li {
+  font-size: 1rem;
+  counter-increment: step-counter;
+  position: relative;
+}
+
+#contribute ol li a {
+  color: #3F0D12;
+}
+
+#contribute ol li::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 4c-4-1-6 3-6 3s-2-4-6-3-4 6-2 8l8 8 8-8c2-2 2-7-2-8z" fill="%23880D1E"></path></svg>');
+  position: absolute;
+  left: -37px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#contribute ol li::after {
+  content: counter(step-counter);
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 25px;
 }
