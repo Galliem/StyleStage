@@ -1,16 +1,23 @@
 #contribute {
+  color: #fff;
   margin: 20px;
   padding: 10px;
+  text-align: center;
+  border: 1px solid #3F0D12;
 }
 
 #contribute h3 {
-  background-color: blue;
+  font-family: "Sour Gummy", san-serif;
+  font-size: 2rem;
+  color: #3F0D12;
+  text-decoration: underline;
 }
 
 #contribute ol {
   list-style: none;
   counter-reset: step-counter;
   background-color: #fff;
+  color: #3F0D12;
   border-radius: 15px;
   padding: 40px;
 }
@@ -48,4 +55,20 @@
   color: white;
   text-align: center;
   width: 25px;
+}
+
+#files a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dd2d4a;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 4px 4px 7px #3F0D12;
+}
+
+#files a:hover {
+  font-size: 1.1rem;
 }

@@ -2,20 +2,29 @@ $color-background: #dd2d4a;
 $color-primary: #880D1E;
 $color-light: #fff;
 $link-color: #3F0D12;
+$font-1: "Sour Gummy", san-serif;
+
 
 #contribute {
+    color: $color-light;
     margin: 20px;
     padding: 10px;
+    text-align: center;
+    border: 1px solid $link-color;
 }
 
 #contribute h3 {
-    background-color: blue;
+    font-family: $font-1;
+    font-size: 2rem;
+    color: $link-color;
+    text-decoration: underline;
 }
 
 #contribute ol {
     list-style: none;
     counter-reset: step-counter;
     background-color: $color-light;
+    color: $link-color;
     border-radius: 15px;
     padding: 40px;
 }
@@ -53,4 +62,20 @@ $link-color: #3F0D12;
     color: white; 
     text-align: center;
     width: 25px;
+}
+
+#files a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-background;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 4px 4px 7px $link-color;
+}
+
+#files a:hover {
+    font-size: 1.1rem;
 }
