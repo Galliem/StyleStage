@@ -30,6 +30,7 @@ a {
 
 .link-guidelines {
   background-color: #dd2d4a;
+  box-shadow: 4px 4px 7px #3F0D12;
   font-weight: 600;
   text-align: center;
   margin-left: 25%;
@@ -37,10 +38,6 @@ a {
   border-radius: 10px;
   text-decoration: none;
   margin-bottom: 50px;
-}
-
-.link-guidelines:hover {
-  text-decoration: underline;
 }
 
 #guidelines .container::after {
@@ -85,6 +82,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+    text-align: left;
   }
 
   #guidelines .container h2 {
