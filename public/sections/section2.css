@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 body {
-  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
+  background: linear-gradient(180deg, rgb(136, 13, 30) 0%, rgb(244, 156, 187) 100%);
   font-family: "Baskervile", sans-serif;
 }
 

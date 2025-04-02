@@ -201,7 +201,7 @@ blockquote::after {
   --color-primary-alt: #F49CBB;
   --color-secondary: #880D1E;
   --color-background: #F49CBB;
-  --color-text: #231214;
+  --color-text: rgb(35.35, 17.85, 19.6);
   --color-light: #fff;
   --color-anchor: #3F0D12;
   --font-family: "Baloo 2", sans-serif;
@@ -228,9 +228,12 @@ nav li {
 nav li a {
   text-decoration: none;
 }
+nav :hover {
+  color: #F49CBB;
+}
 
 body {
-  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
+  background: linear-gradient(180deg, rgb(136, 13, 30) 0%, rgb(244, 156, 187) 100%);
   font-family: "Baskervile", sans-serif;
 }
 
@@ -238,8 +241,50 @@ h1, h2 {
   font-family: "Dancing Script", serif;
 }
 
+header div {
+  font-family: "Sour Gummy", san-serif;
+  margin: 2%;
+  display: grid;
+}
+header div h1, header div h2 {
+  text-align: center;
+  padding-right: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+header div a {
+  text-decoration: none;
+}
+
+.link-github svg {
+  display: grid;
+  grid-template-rows: 2;
+  fill: #F49CBB;
+  scale: 0.75;
+  text-align: left;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+header div a:hover {
+  text-shadow: #F49CBB 2px 2px 2px;
+}
+
 body {
-  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
+  background: linear-gradient(180deg, rgb(136, 13, 30) 0%, rgb(244, 156, 187) 100%);
   font-family: "Baskervile", sans-serif;
 }
 
