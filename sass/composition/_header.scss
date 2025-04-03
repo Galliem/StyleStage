@@ -28,6 +28,10 @@ header div{
     }
 }
 
+.link-github{
+    width: 150px;
+}
+
 .link-github svg{
     display: grid;
     grid-template-rows: 2;
@@ -54,5 +58,6 @@ header div{
 header div {
     a:hover{
         text-shadow: #F49CBB 2px 2px 2px;
+        
     }
 }
