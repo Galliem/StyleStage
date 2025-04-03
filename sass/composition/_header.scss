@@ -1,0 +1,58 @@
+// <header>
+// <div class="container">
+//   <h1>Style Stage</h1>
+//   <h2>A modern CSS showcase styled by community contributions</h2>
+//   <p> Maintained by
+//     <a href="https://twitter.com/5t3ph">Stephanie Eckles</a> of
+//     <a href="https://moderncss.dev">ModernCSS.dev</a>
+//   </p>
+//   <a href="https://github.com/5t3ph/stylestage" class="link-github">
+//     <span>
+//       <svg><path> star shape </path></svg>
+//     </span> Star on Github</a>
+// </div>
+// </header>
+
+header div{
+    font-family: "Sour Gummy", san-serif; 
+    margin: 2%;
+    display: grid;
+    h1, h2{
+        text-align: center;
+        padding-right: 1rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.link-github svg{
+    display: grid;
+    grid-template-rows: 2;
+    fill: #F49CBB;
+    scale: 0.75;
+    text-align: left;
+    @keyframes rotate{
+        0% {
+            transform: rotate(0deg)
+        }
+        50% {
+            transform: rotate(90deg)
+        }
+        75% {
+            transform: rotate(120deg)
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+    animation: rotate 5s linear infinite;
+}
+
+header div {
+    a:hover{
+        text-shadow: #F49CBB 2px 2px 2px;
+    }
+}

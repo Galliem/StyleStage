@@ -210,6 +210,9 @@ nav li {
 nav li a {
   text-decoration: none;
 }
+nav :hover {
+  color: #F49CBB;
+}
 
 body {
   background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
@@ -218,6 +221,48 @@ body {
 
 h1, h2 {
   font-family: "Dancing Script", serif;
+}
+
+header div {
+  font-family: "Sour Gummy", san-serif;
+  margin: 2%;
+  display: grid;
+}
+header div h1, header div h2 {
+  text-align: center;
+  padding-right: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+header div a {
+  text-decoration: none;
+}
+
+.link-github svg {
+  display: grid;
+  grid-template-rows: 2;
+  fill: #F49CBB;
+  scale: 0.75;
+  text-align: left;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+header div a:hover {
+  text-shadow: #F49CBB 2px 2px 2px;
 }
 
 #about .container:nth-last-of-type(2) {
