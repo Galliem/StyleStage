@@ -15,16 +15,20 @@
         grid-column: 2;
         padding-right: 15px;
     }
+    blockquote p {
+        text-align: center;
+        // margin-left: 15px;
+        width: 450px
+    }
     blockquote, blockquote::before {
         grid-column: 2;
         margin: 0;
         padding: 0;
         margin-bottom: 20px;
         margin-left: 10px;
+        width: 450px;
     }
 }
-
-
 
 @media (max-width: 1000px) {
     #about .container:nth-last-of-type(2){
@@ -33,6 +37,11 @@
             grid-column: 1;
             padding-left: 15px;
         }
+        blockquote p {
+            text-align: center;
+            // margin-left: 15px;
+            width: 500px
+        }    
         blockquote, blockquote::before {
             grid-column: 1;
             margin-left: 5%;

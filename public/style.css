@@ -34,7 +34,10 @@ body {
   font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
+}
+
+main {
+  margin-right: 150px;
 }
 
 /* Make images easier to work with */
@@ -283,12 +286,17 @@ header div a:hover {
   grid-column: 2;
   padding-right: 15px;
 }
+#about .container:nth-last-of-type(2) blockquote p {
+  text-align: center;
+  width: 450px;
+}
 #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
   grid-column: 2;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
   margin-left: 10px;
+  width: 450px;
 }
 
 @media (max-width: 1000px) {
@@ -298,6 +306,10 @@ header div a:hover {
   #about .container:nth-last-of-type(2) p {
     grid-column: 1;
     padding-left: 15px;
+  }
+  #about .container:nth-last-of-type(2) blockquote p {
+    text-align: center;
+    width: 500px;
   }
   #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
     grid-column: 1;
@@ -315,6 +327,8 @@ header div a:hover {
   align-self: start;
   margin: 0;
   padding-left: 15px;
+  position: sticky;
+  top: 0;
 }
 #about .container:nth-last-of-type(1) p, #about .container:nth-last-of-type(1) ul {
   grid-column: 1;
@@ -407,6 +421,8 @@ aside#styles div h2 {
   align-self: start;
   margin: 0;
   padding-right: 15px;
+  position: sticky;
+  top: 0;
 }
 aside#styles div ul {
   grid-column: 2;
