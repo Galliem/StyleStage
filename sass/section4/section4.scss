@@ -10,7 +10,7 @@ $font-1: "Sour Gummy", san-serif;
     margin: 20px;
     padding: 10px;
     text-align: center;
-    border: 1px solid $link-color;
+    margin-bottom: 30px;
 }
 
 #contribute h3 {
@@ -78,4 +78,34 @@ $font-1: "Sour Gummy", san-serif;
 
 #files a:hover {
     font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #contribute .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        text-align: left;
+    }
+
+    #contribute .container h2 {
+        grid-column: 2/3;
+    }
+
+    #contribute h3 {
+        grid-column: 1/2;
+    }
+
+    #contribute .container p {
+        grid-column: 1/2;
+    }
+
+    #contribute ol {
+        grid-column: 1/2;
+    }
+
+    #files a{
+        grid-column: 1/2;
+        margin: 0;
+    }
 }
