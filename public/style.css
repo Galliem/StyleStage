@@ -183,7 +183,7 @@ blockquote::before {
   --color-primary-alt: #F49CBB;
   --color-secondary: #880D1E;
   --color-background: #F49CBB;
-  --color-text: #231214;
+  --color-text: rgb(35.35, 17.85, 19.6);
   --color-light: #fff;
   --color-anchor: #3F0D12;
   --font-family: "Baloo 2", sans-serif;
@@ -209,13 +209,14 @@ nav li {
 }
 nav li a {
   text-decoration: none;
+  margin: -5px;
 }
 nav :hover {
   color: #F49CBB;
 }
 
 body {
-  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
+  background: linear-gradient(180deg, rgb(136, 13, 30) 0%, rgb(244, 156, 187) 100%);
   font-family: "Baskervile", sans-serif;
 }
 
@@ -236,6 +237,10 @@ header div h1, header div h2 {
 }
 header div a {
   text-decoration: none;
+}
+
+.link-github {
+  width: 150px;
 }
 
 .link-github svg {
