@@ -47,14 +47,21 @@ a {
     gap: 1em;
     text-align: left;
   }
-
   #guidelines .container h2 {
     grid-column: 1/2;
   }
-
   #guidelines .container h3,
-p,
-a {
+  p,
+  a {
+    grid-column: 1/2;
+  }
+
+  #guidelines .container::after {
+    margin-left: 80px;
+    margin-top: 150px;
+    width: 80%;
+    height: 80%;
+    grid-row: 2/6;
     grid-column: 2/3;
   }
 }
