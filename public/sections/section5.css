@@ -1,5 +1,89 @@
-aside.styles {
-  background: white;
+aside#styles div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 4em;
+  padding-right: 15px;
+  margin-right: 150px;
+}
+aside#styles div h2 {
+  background-color: var(--color-secondary);
+  align-self: center;
+  color: var(--color-background);
+  padding: 0.25em 0.5em;
+  grid-column: 1;
+  align-self: start;
+  margin: 0;
+  padding-right: 15px;
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+}
+aside#styles div ul {
+  grid-column: 2;
+  padding-right: 15px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+aside#styles div li {
+  list-style: none;
+  border: 4px solid var(--color-primary);
+  box-shadow: 0.25em 0.25em var(--color-secondary);
+  background: radial-gradient(var(--color-background), var(--color-secondary));
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 500px;
+  text-align: center;
+  border: 40px solid;
+  border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23750B19" viewBox="0 0 16 16"><path d="M1.24264 8.24264L8 15L14.7574 8.24264C15.553 7.44699 16 6.36786 16 5.24264V5.05234C16 2.8143 14.1857 1 11.9477 1C10.7166 1 9.55233 1.55959 8.78331 2.52086L8 3.5L7.21669 2.52086C6.44767 1.55959 5.28338 1 4.05234 1C1.8143 1 0 2.8143 0 5.05234V5.24264C0 6.36786 0.44699 7.44699 1.24264 8.24264Z"/></svg>');
+}
+aside#styles div li :nth-last-of-type(2) {
+  margin-left: 20px;
+}
+aside#styles div a:nth-last-child(1) {
+  grid-column: 2;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
-/*# sourceMappingURL=section4.css.map */
+aside#styles div ul li:nth-last-of-type(3) {
+  align-self: flex-start;
+}
+aside#styles div ul li:nth-last-of-type(2) {
+  align-self: flex-end;
+}
+aside#styles div ul li:nth-last-of-type(1) {
+  align-self: center;
+}
+
+@media (max-width: 1000px) {
+  aside#styles div {
+    grid-template-columns: 1fr;
+  }
+  aside#styles div ul {
+    grid-column: 1;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+  aside#styles div a:nth-last-child(1) {
+    grid-column: 1;
+    margin-left: 5%;
+  }
+  aside#styles div li {
+    max-width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  aside#styles div ul {
+    align-content: center;
+  }
+  aside#styles div ul li {
+    width: 300px;
+    max-width: 100%;
+  }
+}

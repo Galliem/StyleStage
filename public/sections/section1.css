@@ -46,3 +46,13 @@
     margin-left: 5%;
   }
 }
+@media (max-width: 650px) {
+  #about .container:nth-last-of-type(2) blockquote p {
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
+    width: 90%;
+  }
+}

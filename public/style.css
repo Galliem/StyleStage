@@ -203,12 +203,12 @@ nav {
   font-family: "Sour Gummy", san-serif;
   position: sticky;
   top: 0;
+  right: 0;
 }
 nav li {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-right: 1rem;
 }
 nav li a {
   text-decoration: none;
@@ -316,6 +316,16 @@ header div a:hover {
     margin-left: 5%;
   }
 }
+@media (max-width: 650px) {
+  #about .container:nth-last-of-type(2) blockquote p {
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
+    width: 90%;
+  }
+}
 #about .container:nth-last-of-type(1) {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -411,6 +421,7 @@ aside#styles div {
   gap: 1em;
   margin-bottom: 4em;
   padding-right: 15px;
+  margin-right: 150px;
 }
 aside#styles div h2 {
   background-color: var(--color-secondary);
@@ -423,6 +434,7 @@ aside#styles div h2 {
   padding-right: 15px;
   position: sticky;
   top: 0;
+  max-width: 100%;
 }
 aside#styles div ul {
   grid-column: 2;
@@ -458,11 +470,9 @@ aside#styles div a:nth-last-child(1) {
 
 aside#styles div ul li:nth-last-of-type(3) {
   align-self: flex-start;
-  margin-left: 20px;
 }
 aside#styles div ul li:nth-last-of-type(2) {
   align-self: flex-end;
-  margin-right: 20px;
 }
 aside#styles div ul li:nth-last-of-type(1) {
   align-self: center;
@@ -485,7 +495,10 @@ aside#styles div ul li:nth-last-of-type(1) {
     max-width: 100%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
+  aside#styles div ul {
+    align-content: center;
+  }
   aside#styles div ul li {
     width: 300px;
     max-width: 100%;
