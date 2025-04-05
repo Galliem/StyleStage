@@ -493,3 +493,21 @@ aside#styles div ul li:nth-last-of-type(1) {
     max-width: 100%;
   }
 }
+footer {
+  font-family: "Sour Gummy", san-serif;
+  margin: 2%;
+  margin-bottom: 0;
+  display: grid;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+footer .link-github svg {
+  fill: #dd2d4a;
+}
