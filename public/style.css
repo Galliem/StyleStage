@@ -210,13 +210,15 @@ nav li {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  height: fit-content;
 }
 nav li a {
   text-decoration: none;
   margin: -5px;
 }
-nav :hover {
+nav a:hover {
   color: #F49CBB;
+  text-shadow: maroon 1px 1px 1px;
 }
 
 body {
@@ -275,7 +277,8 @@ header div a {
 }
 
 header div a:hover {
-  text-shadow: #F49CBB 2px 2px 2px;
+  text-shadow: #F49CBB 1px 1px 1px;
+  color: black;
 }
 
 .skip-link {
@@ -661,14 +664,33 @@ footer {
   display: grid;
 }
 
-footer p a {
+footer a {
   text-decoration: none;
 }
 
-footer li a {
-  text-decoration: none;
+footer li {
+  list-style: none;
+}
+
+footer .link-github {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center the SVG */
+  align-items: center; /* Vertically center the SVG */
 }
 
 footer .link-github svg {
   fill: #dd2d4a;
+  width: 24px; /* Optional: Set a specific width */
+  height: 24px; /* Optional: Set a specific height */
+}
+
+a:hover {
+  color: #880D1E;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  text-align: center;
 }

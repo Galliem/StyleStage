@@ -43,14 +43,34 @@ footer{
     display: grid;
 }
 
-footer p a{
+footer a{
     text-decoration: none;
 }
 
-footer li a{
-    text-decoration: none;
+footer li {
+    
+    list-style: none;
 }
 
-footer .link-github svg{
+footer .link-github {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the SVG */
+    align-items: center; /* Vertically center the SVG */
+}
+
+footer .link-github svg {
     fill: #dd2d4a;
+    width: 24px; /* Optional: Set a specific width */
+    height: 24px; /* Optional: Set a specific height */
+}
+
+a:hover{
+    color: #880D1E;
+}
+
+footer ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    text-align: center;
 }
