@@ -5,6 +5,9 @@
   text-align: center;
   margin-bottom: 30px;
 }
+#contribute h2 {
+  position: static;
+}
 
 #contribute h3 {
   font-family: "Sour Gummy", san-serif;
@@ -86,11 +89,16 @@
   }
 
   #contribute h3 {
-    grid-column: 1/2;
+    grid-column: 2;
+    position: sticky;
+    top: 0;
   }
 
   #contribute .container p {
     grid-column: 1/2;
+  }
+  #contribute .container p:nth-of-type(1) {
+    grid-row: 1;
   }
 
   #contribute ol {

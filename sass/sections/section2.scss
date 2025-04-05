@@ -8,6 +8,8 @@
         align-self: start;
         margin: 0;
         padding-left: 15px;
+        position: sticky;
+        top: 0;
     }
     p, ul {
         grid-column: 1;
@@ -78,6 +80,7 @@
         grid-column: 1;
         grid-row: 1;
         margin: 0;
+        position: static;
         }
         p:nth-of-type(1) {
             grid-row: 2;

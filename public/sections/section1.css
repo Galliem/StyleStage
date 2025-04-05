@@ -16,24 +16,49 @@
   grid-column: 2;
   padding-right: 15px;
 }
+#about .container:nth-last-of-type(2) blockquote p {
+  text-align: center;
+  width: 450px;
+}
 #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
   grid-column: 2;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
   margin-left: 10px;
+  width: 450px;
 }
 
 @media (max-width: 1000px) {
   #about .container:nth-last-of-type(2) {
     grid-template-columns: 1fr;
   }
+  #about .container:nth-last-of-type(2) h2 {
+    position: static;
+  }
   #about .container:nth-last-of-type(2) p {
     grid-column: 1;
     padding-left: 15px;
   }
+  #about .container:nth-last-of-type(2) blockquote p {
+    text-align: center;
+    width: 500px;
+  }
   #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
     grid-column: 1;
     margin-left: 5%;
+  }
+}
+@media (max-width: 650px) {
+  #about .container:nth-last-of-type(2) h2 {
+    position: static;
+  }
+  #about .container:nth-last-of-type(2) blockquote p {
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
+    width: 90%;
   }
 }

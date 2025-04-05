@@ -9,6 +9,9 @@ $link-color: #3F0D12;
   grid-template-columns: 1fr;
   gap: 1em;
   text-align: center;
+  h2 {
+    position: static;
+  }
 }
 
 #guidelines .container p,
@@ -23,6 +26,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 10px;
+  position: static;
 }
 
 #guidelines .container a {
@@ -56,6 +60,8 @@ a {
 
   #guidelines .container h2 {
     grid-column: 1/2;
+    position: sticky;
+    top: 0;
   }
 
   #guidelines .container h3,
