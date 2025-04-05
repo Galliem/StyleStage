@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 @import "./section3/section3.css";
+@import "./sections/currentStage.css";
 *,
 *::before,
 *::after {
@@ -34,7 +35,10 @@ body {
   font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
+}
+
+main {
+  margin-right: 150px;
 }
 
 /* Make images easier to work with */
@@ -183,7 +187,7 @@ blockquote::before {
   --color-primary-alt: #F49CBB;
   --color-secondary: #880D1E;
   --color-background: #F49CBB;
-  --color-text: rgb(35.35, 17.85, 19.6);
+  --color-text: #231214;
   --color-light: #fff;
   --color-anchor: #3F0D12;
   --font-family: "Baloo 2", sans-serif;
@@ -200,12 +204,12 @@ nav {
   font-family: "Sour Gummy", san-serif;
   position: sticky;
   top: 0;
+  right: 0;
 }
 nav li {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-right: 1rem;
 }
 nav li a {
   text-decoration: none;
@@ -216,7 +220,7 @@ nav :hover {
 }
 
 body {
-  background: linear-gradient(180deg, rgb(136, 13, 30) 0%, rgb(244, 156, 187) 100%);
+  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
   font-family: "Baskervile", sans-serif;
 }
 
@@ -300,6 +304,12 @@ header div a:hover {
 #about .container:nth-last-of-type(2) p {
   grid-column: 2;
   padding-right: 15px;
+  color: #3F0D12;
+  font-size: 20px;
+}
+#about .container:nth-last-of-type(2) blockquote p {
+  text-align: center;
+  width: 450px;
 }
 #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
   grid-column: 2;
@@ -307,19 +317,40 @@ header div a:hover {
   padding: 0;
   margin-bottom: 20px;
   margin-left: 10px;
+  width: 450px;
 }
 
 @media (max-width: 1000px) {
   #about .container:nth-last-of-type(2) {
     grid-template-columns: 1fr;
   }
+  #about .container:nth-last-of-type(2) h2 {
+    position: static;
+  }
   #about .container:nth-last-of-type(2) p {
     grid-column: 1;
     padding-left: 15px;
   }
+  #about .container:nth-last-of-type(2) blockquote p {
+    text-align: center;
+    width: 500px;
+  }
   #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
     grid-column: 1;
     margin-left: 5%;
+  }
+}
+@media (max-width: 650px) {
+  #about .container:nth-last-of-type(2) h2 {
+    position: static;
+  }
+  #about .container:nth-last-of-type(2) blockquote p {
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  #about .container:nth-last-of-type(2) blockquote, #about .container:nth-last-of-type(2) blockquote::before {
+    width: 90%;
   }
 }
 #about .container:nth-last-of-type(1) {
@@ -333,10 +364,16 @@ header div a:hover {
   align-self: start;
   margin: 0;
   padding-left: 15px;
+  position: sticky;
+  top: 0;
+}
+#about .container:nth-last-of-type(1) p {
+  font-size: 20px;
 }
 #about .container:nth-last-of-type(1) p, #about .container:nth-last-of-type(1) ul {
   grid-column: 1;
   padding-left: 15px;
+  color: #3F0D12;
 }
 #about .container:nth-last-of-type(1) p:nth-of-type(1) {
   grid-row: 1;
@@ -401,6 +438,7 @@ header div a:hover {
     grid-column: 1;
     grid-row: 1;
     margin: 0;
+    position: static;
   }
   #about .container:nth-last-of-type(1) p:nth-of-type(1) {
     grid-row: 2;
@@ -409,12 +447,127 @@ header div a:hover {
     max-width: 100%;
   }
 }
+#contribute {
+  color: #3F0D12;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#contribute h2 {
+  position: static;
+}
+
+#contribute h3 {
+  font-family: "Sour Gummy", san-serif;
+  font-size: 2rem;
+  color: #3F0D12;
+  text-decoration: underline;
+}
+
+#contribute ol {
+  list-style: none;
+  counter-reset: step-counter;
+  background-color: #fff;
+  color: #3F0D12;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+#contribute ol li {
+  font-size: 1rem;
+  counter-increment: step-counter;
+  position: relative;
+}
+
+#contribute ol li a {
+  color: #3F0D12;
+}
+
+#contribute ol li::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 4c-4-1-6 3-6 3s-2-4-6-3-4 6-2 8l8 8 8-8c2-2 2-7-2-8z" fill="%23880D1E"></path></svg>');
+  position: absolute;
+  left: -37px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#contribute ol li::after {
+  content: counter(step-counter);
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 25px;
+}
+
+#files a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dd2d4a;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 4px 4px 7px #3F0D12;
+}
+
+#files a:hover {
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 1001px) {
+  #contribute .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    text-align: left;
+  }
+
+  #contribute .container h2 {
+    grid-column: 2/3;
+    position: sticky;
+    top: 0;
+  }
+
+  #contribute h3 {
+    grid-column: 2;
+    position: sticky;
+    top: 0;
+  }
+
+  #contribute .container p {
+    grid-column: 1/2;
+  }
+  #contribute .container p:nth-of-type(1) {
+    grid-row: 1;
+  }
+
+  #contribute ol {
+    grid-column: 1/2;
+  }
+
+  #files a {
+    grid-column: 1/2;
+    margin: 0;
+  }
+}
 aside#styles div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   margin-bottom: 4em;
   padding-right: 15px;
+  margin-right: 150px;
 }
 aside#styles div h2 {
   background-color: var(--color-secondary);
@@ -425,6 +578,9 @@ aside#styles div h2 {
   align-self: start;
   margin: 0;
   padding-right: 15px;
+  position: sticky;
+  top: 0;
+  max-width: 100%;
 }
 aside#styles div ul {
   grid-column: 2;
@@ -455,16 +611,20 @@ aside#styles div a:nth-last-child(1) {
   grid-column: 2;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-self: flex-end;
+  width: fit-content;
+  background-color: #dd2d4a;
+  box-shadow: 4px 4px 7px #3F0D12;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 aside#styles div ul li:nth-last-of-type(3) {
   align-self: flex-start;
-  margin-left: 20px;
 }
 aside#styles div ul li:nth-last-of-type(2) {
   align-self: flex-end;
-  margin-right: 20px;
 }
 aside#styles div ul li:nth-last-of-type(1) {
   align-self: center;
@@ -473,6 +633,9 @@ aside#styles div ul li:nth-last-of-type(1) {
 @media (max-width: 1000px) {
   aside#styles div {
     grid-template-columns: 1fr;
+  }
+  aside#styles div h2 {
+    position: static;
   }
   aside#styles div ul {
     grid-column: 1;
@@ -487,7 +650,10 @@ aside#styles div ul li:nth-last-of-type(1) {
     max-width: 100%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
+  aside#styles div ul {
+    align-content: center;
+  }
   aside#styles div ul li {
     width: 300px;
     max-width: 100%;

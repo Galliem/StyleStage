@@ -1,0 +1,76 @@
+$color-background: #dd2d4a;
+$color-primary: #880D1E;
+$color-light: #fff;
+$link-color: #3F0D12;
+$font-1: "Sour Gummy", san-serif;
+
+
+aside.profile div{
+    color: $color-light;
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-right: 150px;
+}
+
+h4#profile-title {
+    position: sticky;
+    top: 0;
+    font-family: $font-1;
+    font-size: 2rem;
+    color: $link-color;
+    text-decoration: underline;
+    grid-column: 2;
+    
+}
+
+aside.profile ul {
+    list-style: none;
+    counter-reset: step-counter;
+    background-color: $color-light;
+    color: $link-color;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0;
+    // grid-row: 1;
+}
+
+aside.profile ul li {
+    font-size: 1rem;
+    counter-increment: step-counter;
+    position: relative;
+}
+
+aside.profile ul li a {
+    color: $link-color;
+}
+
+aside.profile > .container > a {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    background-color: $color-background;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 4px 4px 7px $link-color;
+    width: fit-content;
+    grid-column: 1;
+}
+
+@media (max-width: 1000px) {
+    aside.profile div{
+        grid-template-columns: 1fr;
+        h4#profile-title {
+            grid-column: 1;
+            text-align: center;
+            position: static;
+        }
+    }
+    
+}

@@ -1,3 +1,9 @@
+$color-background: #dd2d4a;
+$color-primary: #880D1E;
+$color-light: #fff;
+$link-color: #3F0D12;
+
+
 #about .container:nth-last-of-type(1){
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,10 +14,16 @@
         align-self: start;
         margin: 0;
         padding-left: 15px;
+        position: sticky;
+        top: 0;
+    }
+    p {
+        font-size: 20px;
     }
     p, ul {
         grid-column: 1;
         padding-left: 15px;
+        color: $link-color;
     }
     p:nth-of-type(1) {
         grid-row: 1;
@@ -78,6 +90,7 @@
         grid-column: 1;
         grid-row: 1;
         margin: 0;
+        position: static;
         }
         p:nth-of-type(1) {
             grid-row: 2;

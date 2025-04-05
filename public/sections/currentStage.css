@@ -1,0 +1,64 @@
+aside.profile div {
+  color: #fff;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-right: 150px;
+}
+
+h4#profile-title {
+  position: sticky;
+  top: 0;
+  font-family: "Sour Gummy", san-serif;
+  font-size: 2rem;
+  color: #3F0D12;
+  text-decoration: underline;
+  grid-column: 2;
+}
+
+aside.profile ul {
+  list-style: none;
+  counter-reset: step-counter;
+  background-color: #fff;
+  color: #3F0D12;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0;
+}
+
+aside.profile ul li {
+  font-size: 1rem;
+  counter-increment: step-counter;
+  position: relative;
+}
+
+aside.profile ul li a {
+  color: #3F0D12;
+}
+
+aside.profile > .container > a {
+  display: flex;
+  background-color: #dd2d4a;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 4px 4px 7px #3F0D12;
+  width: fit-content;
+  grid-column: 1;
+}
+
+@media (max-width: 1000px) {
+  aside.profile div {
+    grid-template-columns: 1fr;
+  }
+  aside.profile div h4#profile-title {
+    grid-column: 1;
+    text-align: center;
+    position: static;
+  }
+}

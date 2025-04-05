@@ -4,6 +4,8 @@ aside#styles div{
     gap: 1em;
     margin-bottom: 4em;
     padding-right: 15px;
+    margin-right: 150px;
+
 
     h2 {
         background-color: var(--color-secondary);
@@ -14,6 +16,9 @@ aside#styles div{
         align-self: start;
         margin: 0;
         padding-right: 15px;
+        position: sticky;
+        top: 0;
+        max-width: 100%;
     }
     ul {
         grid-column: 2;
@@ -44,18 +49,22 @@ aside#styles div{
         grid-column: 2;
         margin: 0;
         display: flex;
-        justify-content: flex-end;
+        justify-self: flex-end;
+        width: fit-content;
+        background-color: #dd2d4a;
+        box-shadow: 4px 4px 7px #3F0D12;
+        font-weight: 600;
+        border-radius: 10px;
+        text-decoration: none;
     }
 }
 
 aside#styles div ul {
     li:nth-last-of-type(3){
         align-self: flex-start;
-        margin-left: 20px;
     }
     li:nth-last-of-type(2) {
         align-self: flex-end;
-        margin-right: 20px;
     }
     li:nth-last-of-type(1) {
         align-self: center;
@@ -66,10 +75,14 @@ aside#styles div ul {
 @media (max-width: 1000px) {
     aside#styles div{
         grid-template-columns: 1fr;
+        h2 {
+            position: static;
+        }
         ul {
             grid-column: 1;
             padding-left: 15px;
             margin: 0 auto;
+            // align-content: center;
         }
         a:nth-last-child(1){
             grid-column: 1;
@@ -81,9 +94,10 @@ aside#styles div ul {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
     aside#styles div{
         ul {
+            align-content: center;
             li {
                 width: 300px;
                 max-width: 100%;

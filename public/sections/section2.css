@@ -9,10 +9,16 @@
   align-self: start;
   margin: 0;
   padding-left: 15px;
+  position: sticky;
+  top: 0;
+}
+#about .container:nth-last-of-type(1) p {
+  font-size: 20px;
 }
 #about .container:nth-last-of-type(1) p, #about .container:nth-last-of-type(1) ul {
   grid-column: 1;
   padding-left: 15px;
+  color: #3F0D12;
 }
 #about .container:nth-last-of-type(1) p:nth-of-type(1) {
   grid-row: 1;
@@ -77,6 +83,7 @@
     grid-column: 1;
     grid-row: 1;
     margin: 0;
+    position: static;
   }
   #about .container:nth-last-of-type(1) p:nth-of-type(1) {
     grid-row: 2;
