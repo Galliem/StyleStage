@@ -33,6 +33,9 @@
   #about .container:nth-last-of-type(2) {
     grid-template-columns: 1fr;
   }
+  #about .container:nth-last-of-type(2) h2 {
+    position: static;
+  }
   #about .container:nth-last-of-type(2) p {
     grid-column: 1;
     padding-left: 15px;
@@ -47,6 +50,9 @@
   }
 }
 @media (max-width: 650px) {
+  #about .container:nth-last-of-type(2) h2 {
+    position: static;
+  }
   #about .container:nth-last-of-type(2) blockquote p {
     width: 90%;
     padding-left: 10px;

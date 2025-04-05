@@ -5,6 +5,9 @@
   gap: 1em;
   text-align: center;
 }
+#guidelines .container h2 {
+  position: static;
+}
 
 #guidelines .container p,
 h3,
@@ -18,6 +21,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 10px;
+  position: static;
 }
 
 #guidelines .container a {
@@ -50,6 +54,8 @@ a {
 
   #guidelines .container h2 {
     grid-column: 1/2;
+    position: sticky;
+    top: 0;
   }
 
   #guidelines .container h3,

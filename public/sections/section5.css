@@ -48,7 +48,13 @@ aside#styles div a:nth-last-child(1) {
   grid-column: 2;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-self: flex-end;
+  width: fit-content;
+  background-color: #dd2d4a;
+  box-shadow: 4px 4px 7px #3F0D12;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 aside#styles div ul li:nth-last-of-type(3) {
@@ -64,6 +70,9 @@ aside#styles div ul li:nth-last-of-type(1) {
 @media (max-width: 1000px) {
   aside#styles div {
     grid-template-columns: 1fr;
+  }
+  aside#styles div h2 {
+    position: static;
   }
   aside#styles div ul {
     grid-column: 1;
