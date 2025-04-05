@@ -8,9 +8,12 @@ $link-color: #3F0D12;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
-  text-align: center;
+  text-align: left;
   h2 {
     position: static;
+  }
+  p {
+    font-size: 20px;
   }
 }
 
@@ -19,7 +22,7 @@ h3,
 a {
   margin: 5px;
   padding: 10px;
-  color: $color-light;
+  color: $link-color;
 }
 
 #guidelines .container h3 {
@@ -50,7 +53,7 @@ a {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1001px) {
   #guidelines .container {
     display: grid;
     grid-template-columns: 1fr 1fr;

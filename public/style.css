@@ -304,6 +304,8 @@ header div a:hover {
 #about .container:nth-last-of-type(2) p {
   grid-column: 2;
   padding-right: 15px;
+  color: #3F0D12;
+  font-size: 20px;
 }
 #about .container:nth-last-of-type(2) blockquote p {
   text-align: center;
@@ -365,9 +367,13 @@ header div a:hover {
   position: sticky;
   top: 0;
 }
+#about .container:nth-last-of-type(1) p {
+  font-size: 20px;
+}
 #about .container:nth-last-of-type(1) p, #about .container:nth-last-of-type(1) ul {
   grid-column: 1;
   padding-left: 15px;
+  color: #3F0D12;
 }
 #about .container:nth-last-of-type(1) p:nth-of-type(1) {
   grid-row: 1;
@@ -442,7 +448,7 @@ header div a:hover {
   }
 }
 #contribute {
-  color: #fff;
+  color: #3F0D12;
   margin: 20px;
   padding: 10px;
   text-align: center;
@@ -519,7 +525,7 @@ header div a:hover {
   font-size: 1.1rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1001px) {
   #contribute .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -529,6 +535,8 @@ header div a:hover {
 
   #contribute .container h2 {
     grid-column: 2/3;
+    position: sticky;
+    top: 0;
   }
 
   #contribute h3 {
