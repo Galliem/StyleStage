@@ -1,0 +1,76 @@
+// <footer class="page-footer">
+//       <div class="container">
+//         <p>
+//           Created and maintained by
+//           <a href="https://twitter.com/5t3ph">Stephanie Eckles (@5t3ph)</a>
+//         </p>
+//         <ul>
+//           <li>
+//             <a href="https://twitter.com/5t3ph" class="link-twittercontact"
+//               >Contact on Twitter</a>
+//           </li>
+//           <li>
+//             <a href="https://github.com/5t3ph/stylestage" class="link-github"
+//               ><svg xmlns="http://www.w3.org/2000/svg" >
+//                 <path d=""></path>
+//               </svg>
+//               Star on Github</a>
+//           </li>
+//           <li><a href="/feed/" class="link-rss">RSS Feed</a></li>
+//           <li>
+//             <a href="/subscribe/" class="link-support">Subscribe to Updates</a>
+//           </li>
+//         </ul>
+//         <p>
+//           Crafted with semantic, accessible HTML and CSS,
+//           <strong>Style Stage</strong> is generated with
+//           <a href="https://11ty.dev">11ty</a> and hosted on
+//           <a href="https://netlify.com">Netlify</a>. This project uses
+//           <a href="https://postcss.org/">PostCSS</a> with
+//           <a href="https://github.com/postcss/autoprefixer">autoprefixer</a>.
+//         </p>
+//         <p>
+//           Contributors retain copyright of all graphics used, and styles are available under
+//           <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>
+//         </p>
+//       </div>
+//     </footer>
+
+footer{
+    font-family: "Sour Gummy", san-serif; 
+    margin: 2%;
+    margin-bottom:0;
+    display: grid;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer li {
+    
+    list-style: none;
+}
+
+footer .link-github {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the SVG */
+    align-items: center; /* Vertically center the SVG */
+}
+
+footer .link-github svg {
+    fill: #dd2d4a;
+    width: 24px; /* Optional: Set a specific width */
+    height: 24px; /* Optional: Set a specific height */
+}
+
+a:hover{
+    color: #880D1E;
+}
+
+footer ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    text-align: center;
+}
