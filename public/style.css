@@ -187,7 +187,7 @@ blockquote::before {
   --color-primary-alt: #F49CBB;
   --color-secondary: #880D1E;
   --color-background: #F49CBB;
-  --color-text: #231214;
+  --color-text: rgb(35.35, 17.85, 19.6);
   --color-light: #fff;
   --color-anchor: #3F0D12;
   --font-family: "Baloo 2", sans-serif;
@@ -220,7 +220,7 @@ nav :hover {
 }
 
 body {
-  background: linear-gradient(180deg, #880d1e 0%, #f49cbb 100%);
+  background: linear-gradient(180deg, rgb(136, 13, 30) 0%, rgb(244, 156, 187) 100%);
   font-family: "Baskervile", sans-serif;
 }
 
@@ -532,30 +532,25 @@ header div a:hover {
     gap: 1em;
     text-align: left;
   }
-
   #contribute .container h2 {
     grid-column: 2/3;
     position: sticky;
     top: 0;
   }
-
   #contribute h3 {
     grid-column: 2;
     position: sticky;
     top: 0;
   }
-
   #contribute .container p {
     grid-column: 1/2;
   }
   #contribute .container p:nth-of-type(1) {
     grid-row: 1;
   }
-
   #contribute ol {
     grid-column: 1/2;
   }
-
   #files a {
     grid-column: 1/2;
     margin: 0;
