@@ -3,10 +3,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
-  text-align: center;
+  text-align: left;
 }
 #guidelines .container h2 {
   position: static;
+}
+#guidelines .container p {
+  font-size: 20px;
 }
 
 #guidelines .container p,
@@ -14,7 +17,7 @@ h3,
 a {
   margin: 5px;
   padding: 10px;
-  color: #fff;
+  color: #3F0D12;
 }
 
 #guidelines .container h3 {
@@ -44,7 +47,7 @@ a {
   margin-bottom: 50px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1001px) {
   #guidelines .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
